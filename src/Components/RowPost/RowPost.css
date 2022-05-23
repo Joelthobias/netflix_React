@@ -12,7 +12,12 @@
 .posters::-webkit-scrollbar{
     display: none;
 }
-.posters img{
+.poster{
     max-height: 250px;
     margin-right: 10px;
+}
+.smallimg{
+    max-height: 150px;
+    margin-right: 10px;
+
 }

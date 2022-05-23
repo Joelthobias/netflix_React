@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { original,action } from './url';
 import './App.css';
 import Banner from './Components/banner/Banner';
 import Navbar from './Components/NavBar/Navbar';
@@ -10,7 +10,8 @@ function App() {
     <div className="App">
       <Navbar/>
       <Banner/>
-      <RowPost/>
+      <RowPost url={original} title='Netflix Originals' />
+      <RowPost url={action} title='Action' isSmall />
     </div>
   );
 }
