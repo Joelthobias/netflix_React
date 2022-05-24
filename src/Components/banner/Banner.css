@@ -1,10 +1,10 @@
 .Banner{
     background-size: cover;
-    height: 448px;
+    height: 600px;
     color: #fff;
 }
 .content{
-    padding-top: 140px;
+    padding-top: 212px;
     height: 190px;
     padding-left: 20px;
 }
@@ -39,6 +39,6 @@
 }
 .fade_bottom
 {
-    height: 7.4rem;
+    height: 12.4rem;
     background-image: linear-gradient(180deg,transparent ,rgb(37,37,37,.61),#111);
 }
