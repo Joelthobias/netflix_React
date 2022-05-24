@@ -42,3 +42,8 @@
     height: 12.4rem;
     background-image: linear-gradient(180deg,transparent ,rgb(37,37,37,.61),#111);
 }
+.video{
+    /* z-index: 1; */
+    position: relative;
+    /* margin-top: 50px; */
+}

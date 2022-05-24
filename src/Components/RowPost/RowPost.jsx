@@ -1,11 +1,11 @@
 import React,{useEffect,useState} from 'react'
 import './RowPost.css'
-import ReactPlayer from 'react-player/youtube'
+import YouTube from 'react-youtube'
 import { imageUrl,API_KEY } from '../../constants/constants'
 import axios from '../../constants/axios'
 function RowPost(props) {
   const [movies, setmovies] = useState([])
-  const [urlid, seturlid] = useState(' ')
+  const [urlid, seturlid] = useState('')
   useEffect(() => {
     axios.get(props.url).then((response)=>{
       setmovies(response.data.results.sort(function (a, b) { return 0.5 - Math.random() }))
@@ -14,10 +14,22 @@ function RowPost(props) {
   const handlevideo=(id)=>{
     console.log(id);
     axios.get(`/movie/${id}/videos?api_key=${API_KEY}&language=en-US`).then((response)=>{
-      console.log(response.data);
+      if(response.data.results.lenth!==0){
+        seturlid(response.data.results[0])
+        console.log(response.data.results[0].key);
+      }else{
+        console.log('trailer not available');
+      }
     })
   }
-  
+  const opts = {
+      height: '390',
+      width: '100%',
+      playerVars: {
+        // https://developers.google.com/youtube/player_parameters
+        autoplay: 1,
+      },
+    };
   return (
     
     <div className='row'>
@@ -30,7 +42,7 @@ function RowPost(props) {
             )
           }
         </div>
-        <ReactPlayer   url="https://youtu.be/ucr9puXoizY/" />
+        { urlid && <YouTube opts={opts}  videoId={urlid.key} />}
     </div>
   )
 }
