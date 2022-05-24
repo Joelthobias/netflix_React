@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Joelthobias/netflix_React/static/css/main.241cd9ac.css",
+    "main.js": "/Joelthobias/netflix_React/static/js/main.2a2abcdd.js",
+    "static/js/787.0904c1f0.chunk.js": "/Joelthobias/netflix_React/static/js/787.0904c1f0.chunk.js",
+    "index.html": "/Joelthobias/netflix_React/index.html",
+    "main.241cd9ac.css.map": "/Joelthobias/netflix_React/static/css/main.241cd9ac.css.map",
+    "main.2a2abcdd.js.map": "/Joelthobias/netflix_React/static/js/main.2a2abcdd.js.map",
+    "787.0904c1f0.chunk.js.map": "/Joelthobias/netflix_React/static/js/787.0904c1f0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.241cd9ac.css",
+    "static/js/main.2a2abcdd.js"
+  ]
+}
